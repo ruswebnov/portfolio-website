@@ -1,4 +1,14 @@
-$accent: #5e5e5e;
+$accent: #191a1d;
 $accent2: #f6f6f6;
+$btnclr: #4b6cc1;
+$colorLine: #009691ad;
+$whiteText: #fff;
+$blackText: #000;
 
 
+@mixin text($fs:18px, $lh:24px, $fw:400, $color: #000){
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+  color: $color;
+}

@@ -1,3 +1,4 @@
+@import "vars";
 *,
 *::before,
 *::after{
@@ -26,6 +27,9 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 
 .container{
@@ -35,8 +39,41 @@ body{
   padding: 0 15px;
 }
 .holder__title{
+  font-family: 'Conv_Frisky_Wind';
+  position: relative;
+  z-index: 10;
   text-align: center;
   font-size: 50px;
   letter-spacing: 5px;
-  
+  margin-bottom: 50px;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 38%;
+    bottom: 22px;
+    width: 24%;
+    height: 10px;
+    z-index: -1;
+    background: $colorLine;
+    border-radius: 4px;
 }
+}
+  
+
+
+/* =================SCORLLBAR================= */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgb(0,0,0); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
