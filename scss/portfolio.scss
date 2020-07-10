@@ -1,4 +1,4 @@
-@import "libs.scss";
+@import "libs";
 @import "fonts";
 @import "global";
 @import "vars";
@@ -12,9 +12,9 @@
  &::before{
   content: "";
   position: absolute;
-  bottom:  0;
+  bottom: -3px;
   left: 0;
-  width: 100%;
+  width: 120%;
   height: 77px;
   background-color: $accent;
   clip-path: polygon(100% 100%,0 10%,0 100%);
@@ -24,8 +24,9 @@
 /* ======CARD==== */
 .card {
   position: relative;
+  z-index: 1;
   text-align: center;
-  margin:20px 0;
+  margin:20px 15px;
   width: 300px;
   height: 400px;
   background: #fff;
@@ -65,7 +66,7 @@
   }
 }
 
-.boxx{
+.box{
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -92,11 +93,12 @@
 .portfolio__card-inner{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   
 }
 
 
-/* LINKS */
+/* ===========LINKS=========== */
 .portfolio__item-link{
  display: inline-block;
  position: relative;
@@ -129,14 +131,14 @@
    .line--bottom{
      transition: 0.3s;
      right: 100%;
-     transition-delay: 0.45s;
+     transition-delay: 0.4s;
    }
  }
  &:hover{
    .line--left{
      transition: 0.3s;
      bottom:  100%;
-     transition-delay: 0.6s;
+     transition-delay: 0.5s;
    }
  }
 }
@@ -147,7 +149,7 @@
    box-shadow: 0 0 10px $btnclr, 0 0 40px $btnclr, 0 0 80px $btnclr;
    background-color: $btnclr;
    color: #fff;
-   transition-delay: 0.7s;
+   transition-delay: 0.5s;
  }
 }
 
@@ -186,22 +188,18 @@
  height: 100%;
  background: linear-gradient(0deg, transparent, $btnclr);
 }
-
-// .portfolio__link-box{
-//  display: flex;
-//  bottom: -55%;
-//  left: 2.5%;
-//  align-items: center;
-//  position: relative;
-// }
-
 .portfolio__link-wrap{
   display: flex;
   flex-direction: column;
 }
-
-
-
-
-
-
+.portfolio__svg-icon1{
+  position: absolute;
+  width: 190px;
+  top: -26%;
+}
+.portfolio__svg-icon2{
+  position: absolute;
+  width: 190px;
+  bottom: -27%;
+  right: 0;
+}
