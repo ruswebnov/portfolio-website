@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   /* Анимация меню */
   $(window).on('scroll', function() {
     if($(window).scrollTop()){
@@ -50,6 +49,9 @@ $(document).ready(function(){
     },
   });  
 
+  new WOW().init();
+
+ 
 });
 
 
