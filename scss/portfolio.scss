@@ -14,7 +14,7 @@
   position: absolute;
   bottom: -3px;
   left: 0;
-  width: 120%;
+  width: 100%;
   height: 77px;
   background-color: $accent;
   clip-path: polygon(100% 100%,0 10%,0 100%);
@@ -87,8 +87,6 @@
   line-height: 30px;
   margin: 20px 0;
 }
-
-
 
 .portfolio__card-inner{
   display: flex;
